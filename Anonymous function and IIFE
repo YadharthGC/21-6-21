@@ -1,0 +1,202 @@
+1.sum:
+var a=[1,2,3,4],s=0;
+ (function(){
+    for(i=0;i<a.length;i++)
+    {
+        s=s+a[i];
+    }
+    console.log(s);
+})();
+
+2.odd no.:
+ var a = [1, 2, 3, 4],s = -1,b=[];   
+ (function() 
+ {
+     for (i = 0; i < a.length; i++)
+     {
+       if(a[i]%2!=0)
+       {
+           s++;
+           b[s]=a[i];
+           console.log(b[s]);
+       }
+     }
+ })();
+
+3.prime no:
+var a=[2,3,4,5,6,7]
+var b=[],f,n=-1;
+for(i=2;i<1000;i++)
+{
+    f=0;
+    for(j=2;j<i;j++)
+    {
+        if(i%j==0)
+        {
+            f=1;
+        }
+    }
+    if((i>1)&&(f==0))
+    {
+        n++;
+        b[n]=i;
+    }
+}
+(function()
+{
+    var m=-1;
+    var c=[];
+    for(i=0;i<=n;i++)
+    {
+        for(j=0;j<a.length;j++)
+        {
+            if(b[i]==a[j])
+            {
+                m++;
+                c[m]=b[i];
+            }
+        }
+    }
+    var f=(c+'').replace(/,/g,' ');
+    console.log(f);
+})();
+
+4.Duplicate erase:
+var a=[2,3,4,2,6,7];
+var m=-1;
+var c=[];
+(function()
+{
+    for(i=0;i<a.length;i++)
+    {
+        for(j=i+1;j<a.length;j++)
+        {
+            if(a[i]==a[j])
+            {
+                a[j]=-1
+            }
+        }
+    }
+    for(i=0;i<a.length;i++)
+    {
+        if(a[i]!=-1)
+        {
+            m++;
+            c[m]=a[i];
+        }
+    }
+    var f=(c+'').replace(/,/g,' ');
+    console.log(f);
+})();
+
+5.Rotate k times:
+var a=[2,3,4,6,7];
+(function()
+{
+var n=a.length,k=3,m=-1,b=[];
+k=k%n;
+for (i=0;i<n;i++) 
+    {
+        if (i<k)
+        {
+           m++;
+           b[m]=a[n+i-k];
+        }
+        else 
+        {
+           m++;
+           b[m]=a[i-k];
+        }
+    }
+   var f=(b+'').replace(/,/g,' ');
+    console.log(f);  
+})();
+
+6.Median:
+var a=[1,2,4,5];
+var b=[7,9,21,6];
+var m=-1;
+var c=[];
+(function(){
+for(i=0;i<a.length;i++)
+{
+    m++;
+    c[m]=+(a[i]);
+}
+for(i=0;i<b.length;i++)
+{
+    m++;
+    c[m]=+(b[i]);
+}
+for(i=0;i<=m;i++)
+{
+    for(j=i+1;j<=m;j++)
+    {
+        if(c[i]>=c[j])
+        {
+            var t;
+            t=c[i];
+            c[i]=c[j];
+            c[j]=t;
+        }
+    }
+}
+var x=m+1;
+var y=x/2;
+var z=(c[y]+c[y-1])/2;
+var r=Math.floor(z)
+console.log(r);
+})();
+
+7.Palindrome
+var a=[11,121,333];
+var b=[],c=[],d=[],m=-1;
+( function(){
+for(i=0;i<a.length;i++)
+{
+    b[i]=+(a[i]);
+    c[i]=+(a[i]);
+    var n=b[i];
+    var re=0,r
+    while(n!=0)
+    {
+    r=Math.floor(n%10);
+    re=re*10+r;
+    n=Math.floor(n/10);
+    }
+    if(re==b[i])
+    {
+        m++;
+        d[m]=re;
+    }
+}
+var f=(d+'').replace(/,/g,' ');
+console.log(f);
+})();
+
+8.TitleCaps
+
+(function()
+{
+var a='Hi world'
+var b=a.split('');
+for(i=0;i<b.length;i++)
+{
+    if(b[i]==' ')
+    {
+        b[i]='0'
+        b[i+1]=b[i+1].toUpperCase();
+    }
+}
+var m=-1,c=[];
+for(i=0;i<b.length;i++)
+{
+    if(b[i]!='0')
+    {
+        m++;
+        c[m]=b[i];
+    }
+}
+var f=(c+"").replace(/,/g,'');
+console.log(f);
+})();
