@@ -18,9 +18,10 @@ var a=[1,2,3,4],s=0;
        {
            s++;
            b[s]=a[i];
-           console.log(b[s]);
        }
      }
+     var f=(b+'').replace(/,/g,' ');
+    console.log(f);
  })();
 
 3.prime no:
