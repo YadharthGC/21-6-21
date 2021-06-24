@@ -1,0 +1,338 @@
+
+GUVI: Zen Class — Part 1: Find the culprits and nail them — debugging javascript
+
+1."I'm JavaScript!"
+
+2.<script>
+  function a() {
+    alert ("I'm JavaScript!");
+  }
+  </script>
+
+3.I'm JavaScript!
+hello
+[wor
+ld]
+6
+
+4.admin = fname+' '+lname;
+
+5.let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+' '+lname;
+alert( 'hello'+' '+name );
+
+6.let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(parseInt(a)+parseInt(b));
+
+7.var a = "0" > "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+
+8.let a = prompt("Enter a number?");
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+
+9.let value = prompt('How many runs you scored in this ball');
+if (value == 4) {
+      console.log("You hit a Four");
+} else if (value == 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+VM514:3 You hit a Four
+
+10.
+
+11.
+
+12.let message;
+let lock = '';
+//Dont change any code below this 
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+  console.log(message);
+
+13.let message;
+let lock = '';
+//Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+
+14.let i = 3;
+while (i) {
+  console.log( i-- );
+}
+
+15.for(i=1;i<11;i++)
+{
+    console.log(i);
+}
+
+
+16.for (let num = 2; num <= 20; num += 2) {
+  console.log(num)
+}
+
+17.let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(gifts[i]);
+}
+
+18.let countdown = 100;
+while (countdown > 0) {
+  countdown--;
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+  else
+  {
+      console.log("bomb disarmed");
+  }
+}
+
+19.hi 
+because lemeout is 0 which is false
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+GUVI: Zen Class — Part 2 : Find the culprits and nail them — debugging javascript loops
+
+1.var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string ="";
+ 
+for (var i = 0; i <numsArr.length ; i++) {
+ new_string += numsArr[i] 
+}
+console.log(new_string);
+
+2.var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+ 
+for (var i = 0; i < numsArr.length; i++) {
+ new_string += numsArr[i] +','  
+}
+console.log(new_string);
+
+3.var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+ 
+for (var i = 10; i > 0; i --) {
+ new_string += numsArr[i] + ' '
+}
+console.log(new_string);
+
+4.var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] =' even'
+ }
+}
+console.log(numsArr);
+
+5.var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(i %2 == 0 )
+ {
+ numsArr[i] = 'even'
+ }
+}
+console.log(numsArr);
+
+6.var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <=10; i++) {
+ sum += numsArr[i]
+}
+console.log(sum);
+
+7.var numsArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <10; i++) {
+ if(numsArr[i]%2==0)
+ {
+ sum += numsArr[i]
+ }
+}
+console.log(sum);
+
+8.var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i]%2==0)
+ {
+ sum += numsArr[i]
+ }
+ else
+ {
+ sum -= numsArr[i]
+ }
+}
+console.log(sum);
+
+9.var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i < numsArr.length; i++)
+{
+ console.log('Array'+'('+(numsArr[i].length)+')'+' '+'[' +numsArr[i]+']');
+}
+
+10.var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all='';
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ )
+     str_all +=inner_array[j]
+}
+console.log(str_all);
+
+11.var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all=0;
+for (var i = 0; i < numsArr.length; i++) 
+{
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ )
+   {  
+       if(inner_array[j] %2 != 0 )
+      {
+         inner_array[j] = 'even'
+       }
+   }
+}
+console.log(numsArr);
+
+12.var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all='';
+for (var i = numsArr.length-1; i >=0 ; i--) {
+ var inner_array = numsArr[i];
+ for(var j = inner_array.length-1; j >=0 ;j-- )
+     str_all +=inner_array[j]+' '
+}
+console.log(str_all);
+
+13.var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var sum_odd=0;
+var sum_even=0;
+for (var i = 0; i < numsArr.length; i++) 
+{
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ )
+ {
+ if(inner_array[j]%2==0)
+ {
+ sum_odd += inner_array[j]
+ }
+ else
+ {
+ sum_even -= inner_array[j]
+ }
+}
+}
+console.log(sum_even*-1);
+console.log(sum_odd);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+GUVI: Zen Class — Part 3: Find the culprits and nail them — debugging javascript
+
+1.var aa =(f,s,t)=>{
+ if(f>s &&f>t){
+ console.log(f)}
+ else if(s>f && s>t){
+ console.log(s)}
+ else{
+ console.log(t)}
+}
+aa(1,2,3);
+
+2.let n = 123;
+console.log(add(n));
+function add(n)
+{
+let sum = 0,m=[],l=-1;
+while(n!=0)
+{
+    r=Math.floor(n%10);
+    l++;
+    m[l]=r;
+    n=Math.floor(n/10);
+}
+for(var i=0;i<m.length;i++){
+ sum+=m[i]
+ }
+ return sum;
+}
+
+3.const arr = [9,8,5,6,4,3,2,1];
+(function() {
+ let sum = 0;
+ for (var i = 0; i <arr.length; i++)
+{
+ sum += arr[i];
+ }
+ console.log(sum);
+})();
+
+4.var arr = ['guvi', 'geek', 'zen', 'fullstack'];
+var ano = function(arro) {
+ for (var i = 0; i <= arr.length; i++) {
+ console.log(arr[i][0].toUpperCase() + arr[i].substr(1));
+ }
+}
+ano();
+
+5.
+
+6.const num = [10, 20, 30, 40,50,60,70,80,90,100] 
+const sum = (a, b) =>
+ a + b
+const s = num.reduce(sum)
+console.log(s);
+
+7.
+
+8.
+
+9.
+
+10.(function(str){
+ str1 = str.split('').reverse().join('');
+ console.log(str1); 
+})('abcd')
+
+11.
+
+12.
+
+13.
+
+14.
+
