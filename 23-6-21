@@ -58,10 +58,6 @@ if (value == 4) {
 }
 VM514:3 You hit a Four
 
-10.
-
-11.
-
 12.let message;
 let lock = '';
 //Dont change any code below this 
@@ -317,22 +313,10 @@ const sum = (a, b) =>
 const s = num.reduce(sum)
 console.log(s);
 
-7.
-
-8.
-
-9.
-
 10.(function(str){
  str1 = str.split('').reverse().join('');
  console.log(str1); 
 })('abcd')
 
-11.
 
-12.
-
-13.
-
-14.
 
