@@ -1,0 +1,75 @@
+1.class circle {
+    constructor(a) {
+        this.x = a;
+    }
+    ca() {
+        console.log("circumference=" + (2 * 3.14285714286 * this.x));
+        console.log("area=" + (this.x * 3.14285714286 * this.x));
+    }
+}
+var foo = new circle(prompt('enter radius'));
+foo.ca();
+----------------------------------------------------------------------------------------
+2.class movie {
+    constructor(a, b, c) {
+        this.x = a;
+        this.y = b;
+        this.z = c;
+    }
+    me() {
+        console.log(this.x + ' ' + ' ' + this.y + ' ' + this.z);
+    }
+}
+var foo = new movie(prompt('Title'), prompt('Stdio'), prompt('Rating'));
+foo.me();
+----------------------------------------------------------------------------------------
+3.class details {
+    constructor(a, b, c, d, e, f, g, h, i, j) {
+        this.x = a;
+        this.y = b;
+        this.z = c;
+        this.u = d;
+        this.v = e;
+        this.w = f;
+        this.k = g;
+        this.l = h;
+        this.m = i;
+        this.n = j;
+    }
+    me() {
+        console.log(this.x);
+        console.log(this.y);
+        console.log(this.z);
+        console.log(this.u);
+        console.log(this.v);
+        console.log(this.w);
+        console.log(this.k);
+        console.log(this.l);
+        console.log(this.m);
+        console.log(this.n);
+
+    }
+}
+var foo = new details(prompt('Name'), prompt('Age'), prompt('DOB'), prompt('Roll no.'), prompt('Town'), prompt('Hobby'), prompt('Like'), prompt('Skills'), prompt('Marital Status'), prompt('phone'));
+foo.me();
+-------------------------------------------------------------------------------------
+4.class uber {
+    constructor(a) {
+        this.x = a;
+    }
+    price() {
+        if (this.x < 20) {
+            console.log('rs.6');
+        } else {
+            this.x = this.x - 20;
+            var s = 0;
+            for (var i = 0; i < this.x; i++) {
+                s = s + 12;
+            }
+            console.log('rs.' + (s + 6));
+        }
+    }
+}
+var foo = new uber(prompt('Distance to travel'));
+foo.price();
+-----------------------------------------------------------------------------------
